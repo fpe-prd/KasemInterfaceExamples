@@ -20,7 +20,7 @@
 > [!TIP]
 > *json* data structure can be easily loaded into *pandas Dataframe*.
 
-**See** [app.py]
+**See** [app.py](app.py)
 
 ## Docker
 
@@ -50,7 +50,7 @@ where:
 > [!NOTE]
 > A pip connection error during container initialization can be solved by reconfigure the DNS settings in Docker application. Use for instance DNS of Google: 8.8.8.8.
 
-**See** [Dockerfile_dev]
+**See** [Dockerfile_dev](Dockerfile_dev)
 
 ### Production
 
@@ -60,6 +60,6 @@ When launching the Docker container you can have the following warning:
 
 The build-in Flask server, the one launched by Flask run or *app.run()*, is intended for development purpose only. It is single threaded, not very performant and not secure for production deployments. Flask recommends using a WSGI server like [Gunicorn](https://gunicorn.org/) for production.
 
-To launch on production server add gunicorn in requirements.txt and create the WSGI.
+To launch on production server add gunicorn in requirements.txt, create the WSGI and update Docker file.
 
-**See** [wsgi.py] and [Dockerfile_prod]
+**See** [wsgi.py](wsgi.py) and [Dockerfile_prod](Dockerfile_prod)
