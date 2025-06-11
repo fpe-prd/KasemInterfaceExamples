@@ -1,9 +1,16 @@
-FROM python:3.11-slim                                   'system image on which the application will be built'
-WORKDIR /app                                            'Folder inside the container where all subsequent commands will be executed'
+# system image on which the application will be built
+FROM python:3.11-slim       
+# Folder inside the container where all subsequent commands will be executed                   
+WORKDIR /app                                 
 
-COPY requirements.txt .                                 'Copy the requirements file in the container'
-RUN pip install --no-cache-dir -r requirements.txt      'Install the dependencies required to run the Python application'
-COPY app.py .                                           'Copy the source code'
+# Copy the requirements file in the container
+COPY requirements.txt .                             
+# Install the dependencies required to run the Python application    
+RUN pip install --no-cache-dir -r requirements.txt
+# Copy the source code     
+COPY app.py .           
 
-EXPOSE 5000                                             'Specify the port the app listens to inside the container'
-CMD ["flask", "--app", "app", "run", "--host=0.0.0.0"]  'Command that is executed when the container starts, to launch the application'
+# Specify the port the app listens to inside the container
+EXPOSE 5000
+# Command that is executed when the container starts, to launch the application
+CMD ["flask", "--app", "app", "run", "--host=0.0.0.0"]  
