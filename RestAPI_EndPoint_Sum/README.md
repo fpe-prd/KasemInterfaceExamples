@@ -1,7 +1,6 @@
+[Examples list](../README.md)
 
-# Example: RestAPI EndPoint Sum of two syncrhonized time series** 
-
-[All examples](../README.md)
+# Example: RestAPI EndPoint Sum of two syncrhonized time series
 
 ## Service
 
