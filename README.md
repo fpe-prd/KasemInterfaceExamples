@@ -4,7 +4,7 @@
 
 # RestAPI EndPoint Sum 
 
-**Sum of two syncrhonized time series**  deployed in a docker using Python and [Flask](https://flask.palletsprojects.com/).
+**Sum of two syncrhonized time series**  deployed in a docker using Python, [Flask](https://flask.palletsprojects.com/) and [gunicorn](https://gunicorn.org/).
 
 ## Service
 
