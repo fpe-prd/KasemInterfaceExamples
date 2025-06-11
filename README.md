@@ -1,10 +1,10 @@
-# Kasem Interface Examples
+## Kasem Interface Examples
 
 [KASEM](https://www.predict.fr/produits-services/logiciels/) algorithms and services interface.
 
-# RestAPI
+## RestAPI
 
-## EndPoint Sum 
+### EndPoint Sum 
 
 **Sum of two syncrhonized time series**  deployed in a docker using Python, [Flask](https://flask.palletsprojects.com/) and [Gunicorn](https://gunicorn.org/). 
 
