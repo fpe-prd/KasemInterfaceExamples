@@ -33,11 +33,12 @@ Project folder should at least contains:
 
 To build the Docker image, in a terminal, navigate to the folder containing the Docker file and run the command:
 ```
-docker build -t image_name .
+docker build -f Dockerfile_dev -t image_name .
 ```
 where:
+- `-f`  name of the Docker file
 - `-t`  gives the name `image_name` to the built image
-- `.` to look for the files in the current directory.
+- `.` to look for the files in the current directory
 
 To launch the container, run the command:
 ```
