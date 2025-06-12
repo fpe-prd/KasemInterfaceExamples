@@ -6,7 +6,7 @@
 
 ## Service specification
 
- - Inputs times series must be named *e1_ts* and *e2_ts*
+ - Input time series must be named *e1_ts* and *e2_ts*
  - Output time series will be named *sum_ts*
  - Coefficient must be named *scale*
  - Equation: *sum_ts* = *scale* x ( *e1_ts* + *e2_ts* )
@@ -73,4 +73,5 @@ To test the endpoint, Python [Request](https://requests.readthedocs.io/) can be 
 
 > [!NOTE]
 > Exception can be managed in the endpoint in this case the integer propertie `error` must be added to the return *json*, where 0 means *no error* and values greather than 0 are error code. 
+>
 > A string propertie `log` can also be added with text details on the execution. 
