@@ -10,10 +10,10 @@ def method():
     content = request.json
     data = pd.DataFrame(data = content['scalar']['data'],columns=content['scalar']['headers'])
 
-    #Mahe the sum
+    #Make the sum
     data['sum_ts'] = (data['e1_ts'] + data['e2_ts']) * content['param']['scale']
 
-    #Format results
+    #Format result
     data2 = data[['date','sum_ts']]
     result = {'scalar': {}}
     result['scalar']['headers'] = data2.columns.tolist()

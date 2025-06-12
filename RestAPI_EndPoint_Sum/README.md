@@ -14,11 +14,11 @@
 ## Service endpoint
 
  - Use [Flask](https://flask.palletsprojects.com/) to create a RestAPI endpoint, called `method` here.
- - `method` will be called using POST request from KasemInterface with input data in *body*
+ - `method` will be called using POST request from KasemInterface with *json* input data in *body*
  - `method` must return a *json* output data
 
 > [!TIP]
-> *json* data structure can be easily loaded into *pandas Dataframe*.
+> *json* data structure can be easily loaded into *pandas Dataframe*. An overview of *json* strucutre is given in test section.
 
 **See** [app.py](app.py)
 
@@ -51,7 +51,7 @@ where:
 > [!NOTE]
 > A pip connection error during container initialization can be solved by reconfigure the DNS settings in Docker application. Use for instance DNS of Google: 8.8.8.8.
 
-**See** [Dockerfile_dev](Dockerfile_dev)
+**See** [requirements.txt](requirements.txt) and [Dockerfile_dev](Dockerfile_dev)
 
 ### Production
 
@@ -63,4 +63,10 @@ The build-in Flask server, the one launched by Flask run or *app.run()*, is inte
 
 To launch on production server add gunicorn in requirements.txt, create the WSGI and update Docker file.
 
-**See** [wsgi.py](wsgi.py) and [Dockerfile_prod](Dockerfile_prod)
+**See** [wsgi.py](wsgi.py), [requirements.txt](requirements.txt) and [Dockerfile_prod](Dockerfile_prod)
+
+## Test
+
+To test the endpoint, Python [Request](https://requests.readthedocs.io/) can be used with a set of *body* genere from KasemInterfece in *dev* mode.
+
+**See** [test.py](test.py)

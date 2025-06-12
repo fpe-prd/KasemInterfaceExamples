@@ -6,6 +6,6 @@
 
 ### EndPoint Sum 
 
-**Sum of two syncrhonized time series**  deployed in a docker using Python, [Flask](https://flask.palletsprojects.com/) and [Gunicorn](https://gunicorn.org/). 
+**Sum of two syncrhonized time series**  deployed in a docker using Python 
 
 [See more](RestAPI_EndPoint_Sum/README.md)
