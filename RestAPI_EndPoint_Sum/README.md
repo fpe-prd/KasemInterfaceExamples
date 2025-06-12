@@ -70,3 +70,7 @@ To launch on production server add gunicorn in requirements.txt, create the WSGI
 To test the endpoint, Python [Request](https://requests.readthedocs.io/) can be used with a set of *body* genere from KasemInterfece in *dev* mode.
 
 **See** [test.py](test.py)
+
+> [!NOTE]
+> Exception can be managed in the endpoint in this case the integer propertie `error` must be added to the return *json*, where 0 means *no error* and values greather than 0 are error code. 
+> A string propertie `log` can also be added with text details on the execution. 
