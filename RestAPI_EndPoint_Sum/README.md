@@ -67,7 +67,7 @@ To launch on production server add gunicorn in requirements.txt, create the WSGI
 
 ## Test
 
-To test the endpoint, Python [Request](https://requests.readthedocs.io/) can be used with a set of *body* genere from KasemInterfece in *dev* mode.
+To test the endpoint, Python [Requests](https://requests.readthedocs.io/) library can be used with a set of *body* genere from KasemInterfece in *dev* mode.
 
 **See** [test.py](test.py)
 
