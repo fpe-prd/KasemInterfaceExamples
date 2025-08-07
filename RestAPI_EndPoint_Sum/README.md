@@ -46,7 +46,7 @@ docker run --name docker_name -p 2000:5000 image_name
 ```
 where:
 - `--name` is a custom name given to the docker container
-- `-p` is the port mapping option, here tells docker to redito redirect 2000 on the host machine to port 5000 inside the container
+- `-p` is the port mapping option, here tells docker to redirect port 2000 on the host machine to port 5000 inside the container
 
 > [!NOTE]
 > A pip connection error during container initialization can be solved by reconfigure the DNS settings in Docker application. Use for instance DNS of Google: 8.8.8.8.
