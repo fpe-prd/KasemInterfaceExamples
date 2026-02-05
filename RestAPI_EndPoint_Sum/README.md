@@ -44,7 +44,7 @@ docker run --name docker_name -p 5000:5000 image_name
 ```
 where:
 - `--name` is a custom name given to the docker container
-- `-p` is the port mapping option, here tells docker to redirect port 2000 on the host machine to port 5000 inside the container
+- `-p` is the port mapping option, here tells docker to redirect port 5000 on the host machine to port 5000 inside the container
 
 **See** [requirements.txt](requirements.txt) and [Dockerfile](Dockerfile)
 
