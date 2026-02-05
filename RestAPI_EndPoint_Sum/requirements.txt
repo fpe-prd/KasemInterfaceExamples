@@ -1,13 +1,4 @@
-Flask==3.0.0
-pandas==2.1.4
-gunicorn==21.2.0
-
-
-
-
-
-
-
-
-
-
+fastapi==0.110.*        
+uvicorn[standard]==0.30.*
+pandas==3.0.*           
+requests>=2.32.0

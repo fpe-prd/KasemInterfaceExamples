@@ -1,17 +1,20 @@
 # System image on which the application will be built
-FROM python:3.11-slim
+FROM python:3.12-slim
+
 # Folder inside the container where all subsequent commands will be executed
 WORKDIR /app                                            
 
 # Copy the requirements file in the container
 COPY requirements.txt .
+
 # Install the dependencies required to run the Python application   
 RUN pip install --no-cache-dir -r requirements.txt
+
 # Copy the source code   
 COPY app.py .
-COPY wsgi.py .
 
 # Specify the port the app listens to inside the container
 EXPOSE 5000
+
 # Command that is executed when the container starts, to launch the application
-CMD ["gunicorn", "wsgi:app", "--bind", "0.0.0.0:5000"]  
+CMD ["python", "app.py"]  
